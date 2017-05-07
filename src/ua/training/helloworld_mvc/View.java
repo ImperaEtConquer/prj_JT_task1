@@ -4,7 +4,7 @@ public class View {
 	static String ERROR_INCORRECT_INPUT = "Incorrect input, please try again.";
 	
 	public void printHelloWorld(Model model) {
-		System.out.println(model.getHello() + " " + model.getWorld());
+		System.out.println(model.getWord());
 	}
 	
 	public void printErrorMessage(String errorMessage){

@@ -17,9 +17,14 @@ public class Controller {
 
 	public void process() {
 		Scanner sc = new Scanner(System.in);
-		model.setHello(inputStringWithScanner(sc, required_hello));
-		model.setWorld(inputStringWithScanner(sc, required_world));
+		String hello = (inputStringWithScanner(sc, required_hello));
+		String world = (inputStringWithScanner(sc, required_world));
+		setModel(hello, world);
 		view.printHelloWorld(model);
+	}
+	
+	private void setModel(String hello, String world) {
+		model.setWord(hello, world);
 	}
 
 	private String inputStringWithScanner(Scanner sc, String pattern) {

@@ -1,22 +1,13 @@
 package ua.training.helloworld_mvc;
 
 public class Model {
-	private String hello;
-	private String world;
+	private String word;
 
-	public String getHello() {
-		return hello;
+	public String getWord() {
+		return word;
 	}
 
-	public void setHello(String hello) {
-		this.hello = hello;
-	}
-
-	public String getWorld() {
-		return world;
-	}
-
-	public void setWorld(String world) {
-		this.world = world;
+	public void setWord(String hello, String world) {
+		this.word = hello + " " + world;
 	}
 }
